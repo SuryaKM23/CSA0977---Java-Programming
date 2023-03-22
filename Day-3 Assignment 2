@@ -11,10 +11,10 @@ public class SubsetOfString {
         int n = str.length();
         int count = 0;
 
-        // Finding the total number of possible subsets
+        
         int totalSubsets = (int) Math.pow(2, n);
 
-        // Generating all the possible subsets
+        
         for (int i = 0; i < n; i++) {
             for (int j = i; j < n; j++) {
                 String subset = str.substring(i, j + 1);
@@ -23,7 +23,7 @@ public class SubsetOfString {
             }
         }
 
-        // Displaying the count of subsets generated
+        
         System.out.println("Total number of subsets: " + count);
     }
 }
